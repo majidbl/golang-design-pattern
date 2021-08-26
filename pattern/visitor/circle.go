@@ -5,7 +5,7 @@ type Circle struct {
 }
 
 func (c *Circle) Accept(v Visitor) {
-	v.VisitForCircle(*c)
+	v.VisitForCircle(c)
 }
 
 func (c *Circle) GetType() string {
