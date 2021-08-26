@@ -6,7 +6,7 @@ type Rectangle struct {
 }
 
 func (t *Rectangle) Accept(v Visitor) {
-	v.VisitForRectangle(*t)
+	v.VisitForRectangle(t)
 }
 
 func (t *Rectangle) GetType() string {
